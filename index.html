@@ -1,38 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>French Articles Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Logic Puzzle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .equation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      font-size: 1.5em;
+    }
+
+    .equation img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .symbol, .question {
+      margin: 10px;
+      font-weight: bold;
+      font-size: 2em;
+    }
+
+    .question {
+      color: #d9534f;
+    }
+
+    @media (min-width: 600px) {
+      .equation img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .equation img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>French Articles Quiz</h1>
-        <div id="quiz-container">
-            <div id="question-container">
-                <h2 id="question">Loading question...</h2>
-                <div id="options-container">
-                    <!-- Options will be dynamically added here -->
-                </div>
-            </div>
-            <div id="timer-container">
-                <span id="timer">10</span> seconds left
-            </div>
-            <button id="next-button" class="hidden">Next Question</button>
-        </div>
-    </div>
 
-    <!-- Donate Section -->
-    <div class="donate-section">
-        <h2>Please Donate</h2>
-        <p>Your support helps us maintain this platform and continue offering free education.</p>
-        <div class="donate-info">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1j8_1o20igEk7AJyDYrJ_cH3dBXBr6jwuw&usqp=CAU" alt="Wave Logo" class="wave-logo">
-            <p>Phone Number: <strong>3709558</strong></p>
-        </div>
-    </div>
+  <h1>Can You Solve This?</h1>
 
-    <script src="script.js"></script>
+  <div class="equation">
+    <img src="https://via.placeholder.com/100?text=A" alt="Image 1">
+    <span class="symbol">+</span>
+    <img src="https://via.placeholder.com/100?text=B" alt="Image 2">
+    <span class="symbol">=</span>
+    <img src="https://via.placeholder.com/100?text=C" alt="Image 3">
+  </div>
+
+  <div class="equation">
+    <img src="https://via.placeholder.com/100?text=A" alt="Image 1">
+    <span class="symbol">+</span>
+    <img src="https://via.placeholder.com/100?text=C" alt="Image 3">
+    <span class="symbol">+</span>
+    <img src="https://via.placeholder.com/100?text=B" alt="Image 2">
+    <span class="symbol">=</span>
+    <img src="https://via.placeholder.com/100?text=D" alt="Image 4">
+  </div>
+
+  <div class="equation">
+    <img src="https://via.placeholder.com/100?text=D" alt="Image 4">
+    <span class="symbol">+</span>
+    <img src="https://via.placeholder.com/100?text=B" alt="Image 2">
+    <span class="symbol">+</span>
+    <img src="https://via.placeholder.com/100?text=A" alt="Image 1">
+    <span class="symbol">+</span>
+    <img src="https://via.placeholder.com/100?text=C" alt="Image 3">
+    <span class="symbol">=</span>
+    <span class="question">?</span>
+  </div>
+
 </body>
 </html>
